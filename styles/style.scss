@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import "./variables";
+@import "./header";
+@import "./banner";
+@import "./modules";
+@import "./interior";
+@import "./cars";
+@import "./exterior";
+@import "./footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  mix-blend-mode: darken;
+}
+body {
+  font-family: $main-font;
+  background-color: $bg-color;
+}

@@ -1,0 +1,76 @@
+@import "./modules";
+@import "./mediaquaries";
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, $bg-color 40%);
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+  @include laptop {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    max-width: 500px;
+    @include mobile {
+      gap: 20px;
+    }
+
+    h1 {
+      @extend %heading;
+      font-size: 40px;
+      @include mobile {
+        text-align: center;
+      }
+      span {
+        font-family: "Times New Roman", Times, serif;
+      }
+    }
+    p {
+      @extend %p;
+    }
+    img {
+      width: 200px;
+    }
+    h2 {
+      @extend %heading;
+    }
+    button {
+      @extend %button;
+      background-color: crimson;
+      &:hover {
+        background-color: rgb(168, 16, 46);
+      }
+    }
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    &-banner {
+      max-width: 800px;
+      @include laptop {
+        max-width: 500px;
+      }
+    }
+    &-track {
+      max-width: 400px;
+    }
+    p {
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+header img {
+  width: 50px;
+  margin-left: 20px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #252a34;
+}
+header nav a:hover {
+  color: crimson;
+  transition: all 0.5s;
+}
+header #nav-left a {
+  padding: 0 20px;
+  border-right: 1px solid gray;
+}
+header #nav-left a:last-child {
+  border-right: none;
+}
+header #nav-right {
+  gap: 30px;
+  font-size: 15px;
+}
+@media (max-width: 800px) {
+  header #nav-right {
+    display: none;
+  }
+}
+header .opener {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 85px;
+  background-color: rgb(220, 220, 220);
+  box-shadow: 2px 2px 10px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+header .opener a {
+  text-decoration: none;
+  color: #000;
+}
+header .menu {
+  width: 40px;
+  display: none;
+}
+@media (max-width: 800px) {
+  header .menu {
+    display: block;
+  }
+}
+header .menu:hover + .opener {
+  display: flex;
+}
+
+footer .footer-links h2, .hero .slogan h2, .hero .slogan h1, #exterior h1, #interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+.hero .slogan p, #exterior p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero .slogan button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+}
+.hero .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  max-width: 500px;
+}
+@media (max-width: 800px) {
+  .hero .slogan {
+    gap: 20px;
+  }
+}
+.hero .slogan h1 {
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .hero .slogan h1 {
+    text-align: center;
+  }
+}
+.hero .slogan h1 span {
+  font-family: "Times New Roman", Times, serif;
+}
+.hero .slogan img {
+  width: 200px;
+}
+.hero .slogan button {
+  background-color: crimson;
+}
+.hero .slogan button:hover {
+  background-color: rgb(168, 16, 46);
+}
+.hero .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.hero .images-banner {
+  max-width: 800px;
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero .images-banner {
+    max-width: 500px;
+  }
+}
+.hero .images-track {
+  max-width: 400px;
+}
+.hero .images p {
+  max-width: 500px;
+  text-align: center;
+}
+
+footer .footer-links h2, #exterior h1, #interior h1, .hero .slogan h1, .hero .slogan h2 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+#exterior p, #interior p, .hero .slogan p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero .slogan button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+footer .footer-links h2, #exterior h1, #interior h1, .hero .slogan h1, .hero .slogan h2 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+#exterior p, #interior p, .hero .slogan p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero .slogan button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+#interior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), black), url("../images/bmw-banner.jpeg");
+}
+#interior p {
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  #interior p {
+    font-size: 15px;
+  }
+}
+
+footer .footer-links h2, #exterior h1, .hero .slogan h1, .hero .slogan h2, #interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+#exterior p, .hero .slogan p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero .slogan button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+#cars-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+#cars-area .cars {
+  display: flex;
+}
+@media (max-width: 800px) {
+  #cars-area .cars {
+    flex-direction: column;
+  }
+}
+#cars-area .cars img {
+  width: 300px;
+}
+#cars-area .cars h3 {
+  text-align: center;
+}
+#cars-area button {
+  background-color: #6eacda;
+  margin-top: 50px;
+  transition: all 0.5s;
+}
+#cars-area button:hover {
+  background-color: #478ccf;
+}
+
+footer .footer-links h2, #exterior h1, .hero .slogan h1, .hero .slogan h2, #interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+#exterior p, .hero .slogan p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+.hero .slogan button, #cars-area button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+#exterior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url("../images/bmw-6.jpeg");
+}
+@media (max-width: 800px) {
+  #exterior {
+    gap: 40px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  #exterior {
+    gap: 50px;
+  }
+}
+@media (max-width: 800px) {
+  #exterior h1 {
+    font-size: 20px;
+  }
+}
+#exterior p {
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  #exterior p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  #exterior p {
+    font-size: 10px;
+  }
+}
+
+footer .footer-links h2, .hero .slogan h1, .hero .slogan h2, #interior h1, #exterior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+.hero .slogan p, #interior p, #exterior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+.hero .slogan button, #cars-area button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#interior, #exterior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#interior h1, #exterior h1 {
+  color: white;
+}
+#interior p, #exterior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#interior button, #exterior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#interior button:hover, #exterior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #000;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+footer img {
+  width: 80px;
+  height: 80px;
+  mix-blend-mode: unset;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-links h2 {
+  color: white;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  mix-blend-mode: darken;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #eaeaea;
+}/*# sourceMappingURL=style.css.map */

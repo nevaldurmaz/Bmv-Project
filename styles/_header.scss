@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./mediaquaries";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  img {
+    width: 50px;
+    margin-left: 20px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $text-color;
+      &:hover {
+        color: crimson;
+        transition: all 0.5s;
+      }
+    }
+  }
+  #nav-left {
+    a {
+      padding: 0 20px;
+      border-right: 1px solid gray;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  #nav-right {
+    gap: 30px;
+    font-size: 15px;
+    @include mobile {
+      display: none;
+    }
+  }
+  .opener {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 2px 2px 10px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .menu {
+    width: 40px;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+    &:hover + .opener {
+      display: flex;
+    }
+  }
+}

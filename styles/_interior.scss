@@ -1,0 +1,15 @@
+@import "./modules";
+@import "./mediaquaries";
+
+#interior {
+  @extend %design;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), black),
+    url("../images/bmw-banner.jpeg");
+
+  p {
+    font-size: 20px;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+}
